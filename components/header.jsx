@@ -65,7 +65,7 @@ export default class AppHeader extends React.Component {
             <header class="header header-transparent" id="header-main">
             <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark" id="navbar-main">
                <div class="container px-lg-0">
-                  <a class="navbar-brand mr-lg-5" href="../static/assets/template/pages/landing/app.html">
+                  <a class="navbar-brand mr-lg-5" href="#">
                   <img alt="Image placeholder" src="../static/assets/template/assets/img/brand/logobeatact.png" id="navbar-logo" style={{height: '50px'}}></img>
                   </a>
                   <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,14 +74,14 @@ export default class AppHeader extends React.Component {
                   <div class="collapse navbar-collapse" id="navbar-main-collapse">
                      <ul class="navbar-nav align-items-lg-center">
                         <li class="nav-item ">
-                           <a class="nav-link" href="../static/assets/template/pages/landing/app.html">Home</a>
+                           <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overview</a>
                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow p-0">
                               <ul class="list-group list-group-flush">
                                  <li class="#" data-toggle="hover">
-                                    <a href="../static/assets/template/pages/Secondary/services.html" class="list-group-item list-group-item-action" role="button"  aria-haspopup="true" aria-expanded="false">
+                                    <a href="" class="list-group-item list-group-item-action" role="button"  aria-haspopup="true" aria-expanded="false">
                                        <div class="media d-flex align-items-center">
                                           <div class="media-body ml-3">
                                              <h6 class="mb-1">Features</h6>
@@ -91,7 +91,7 @@ export default class AppHeader extends React.Component {
                                     </a>
                                  </li>
                                  <li class="#" data-toggle="hover">
-                                    <a href="../static/assets/template/pages/secondary/team.html" class="list-group-item list-group-item-action" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <a href="" class="list-group-item list-group-item-action" role="button" aria-haspopup="true" aria-expanded="false">
                                        <div class="media d-flex align-items-center">
                                           <div class="media-body ml-3">
                                              <h6 class="mb-1">Our team</h6>
@@ -101,7 +101,7 @@ export default class AppHeader extends React.Component {
                                     </a>
                                  </li>
                                  <li class="#" data-toggle="hover">
-                                    <a href="../static/assets/template/pages/utility/faq.html" class="list-group-item list-group-item-action" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <a href="" class="list-group-item list-group-item-action" role="button" aria-haspopup="true" aria-expanded="false">
                                        <div class="media d-flex align-items-center">
                                           <div class="media-body ml-3">
                                              <h6 class="mb-1">Faq</h6>
@@ -120,7 +120,7 @@ export default class AppHeader extends React.Component {
                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg dropdown-menu-arrow p-0">
                               <ul class="list-group list-group-flush">
                                  <li>
-                                    <a href="../static/assets/template/pages/landing/features.html" class="list-group-item list-group-item-action" role="button">
+                                    <a href="#" class="list-group-item list-group-item-action" role="button">
                                        <div class="media d-flex align-items-center">
                                           <div class="media-body ml-3">
                                              <h6 class="mb-1">Overview</h6>
@@ -130,7 +130,7 @@ export default class AppHeader extends React.Component {
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="../static/assets/template/pages/Secondary/pricing-charts.html" class="list-group-item list-group-item-action" role="button">
+                                    <a href="#" class="list-group-item list-group-item-action" role="button">
                                        <div class="media d-flex align-items-center">
                                           <div class="media-body ml-3">
                                              <h6 class="mb-1">Pricing</h6>
@@ -140,7 +140,7 @@ export default class AppHeader extends React.Component {
                                     </a>
                                  </li>
                                  <li>
-                                    <a href="../static/assets/template/pages/Secondary/team.html" class="list-group-item list-group-item-action" role="button">
+                                    <a href="#" class="list-group-item list-group-item-action" role="button">
                                        <div class="media d-flex align-items-center">
                                           <div class="media-body ml-3">
                                              <h6 class="mb-1">Contact us</h6>
@@ -153,11 +153,11 @@ export default class AppHeader extends React.Component {
                            </div>
                         </li>
                         <li class="nav-item d-lg-none d-xl-block">
-                           <a class="nav-link" href="../static/assets/template/docs/changelog.html" target="_blank">Help</a>
+                           <a class="nav-link" href="#" target="_blank">Help</a>
                         </li>
                         <li class="nav-item mr-0">
-                           <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="nav-link d-lg-none">Purchase now</a>
-                           <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-sm btn-white btn-icon rounded-pill d-none d-lg-inline-flex" data-toggle="tooltip" data-placement="left">
+                           <a href="#" target="_blank" class="nav-link d-lg-none">Purchase now</a>
+                           <a href="#" target="_blank" class="btn btn-sm btn-white btn-icon rounded-pill d-none d-lg-inline-flex" data-toggle="tooltip" data-placement="left">
                            <span class="btn-inner--icon"><i class="fas fa-shopping-cart"></i></span>
                            <span class="btn-inner--text">Find events</span>
                            </a>

@@ -8,7 +8,7 @@ export default class AppFooter extends React.Component {
                 <div class="container">
                     <div class="row pt-md">
                         <div class="col-lg-4 mb-5 mb-lg-0">
-                            <a href="../static/assets/template/index.html">
+                            <a href="">
                                 <img src="../static/assets/template/assets/img/brand/white.png" alt="Footer logo" style={{height: '70px'}}></img>
                             </a>
                             <p>Purpose is a unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</p>
@@ -16,10 +16,10 @@ export default class AppFooter extends React.Component {
                     <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Account</h6>
                             <ul class="list-unstyled">
-                                <li><a href="../static/assets/template/pages/account-profile.html">Profile</a></li>
-                                <li><a href="../static/assets/template/pages/account-settings.html">Settings</a></li>
-                                <li><a href="../static/assets/template/pages/account-billing.html">Billing</a></li>
-                                <li><a href="../static/assets/template/pages/account-notifications.html">Notifications</a></li>
+                                <li><a href="">Profile</a></li>
+                                <li><a href="">Settings</a></li>
+                                <li><a href="">Billing</a></li>
+                                <li><a href="">Notifications</a></li>
                             </ul>
                     </div>
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
@@ -42,28 +42,28 @@ export default class AppFooter extends React.Component {
                     <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
                     <div class="col-md-6">
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                        &copy; 2018-2019 <a href="https://webpixels.io" class="font-weight-bold" target="_blank">Webpixels</a>. All rights reserved.
+                        &copy; 2018-2019 <a href="" class="font-weight-bold" target="_blank">Webpixels</a>. All rights reserved.
                         </div>
                     </div>
                     <div class="col-md-6">
                         <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://dribbble.com/webpixels" target="_blank">
+                            <a class="nav-link" href="" target="_blank">
                             <i class="fab fa-dribbble"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/webpixelsofficial" target="_blank">
+                            <a class="nav-link" href="" target="_blank">
                             <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/webpixels" target="_blank">
+                            <a class="nav-link" href="" target="_blank">
                             <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">
+                            <a class="nav-link" href="" target="_blank">
                             <i class="fab fa-facebook"></i>
                             </a>
                         </li>

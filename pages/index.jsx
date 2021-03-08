@@ -51,7 +51,7 @@ export default class IndexPage extends React.Component {
                                 <p class="lead text-muted lh-180">
                                 Purpose is a great UI package based on Bootstrap 4 that includes the most important components and features so you can jumpstart the hard work and get right to the website creation fast and easy.
                                 </p>
-                                <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" class="btn btn-dark btn-icon rounded-pill hover-scale-110 mt-5">
+                                <a href="" class="btn btn-dark btn-icon rounded-pill hover-scale-110 mt-5">
                                 <span class="btn-inner--text">Let's get started</span>
                                 <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
                                 </a>
@@ -66,7 +66,7 @@ export default class IndexPage extends React.Component {
                                 <div class="pr-md-4">
                                 <h5 class="h3">Change the way you build wesites. Forever.</h5>
                                 <p class="text-muted lead my-4">With Boomerang you get components and examples, including tons of variables that will help you customize this theme with ease.</p>
-                                <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-primary rounded-pill btn-icon mt-4">
+                                <a href="" target="_blank" class="btn btn-primary rounded-pill btn-icon mt-4">
                                     <span class="btn-inner--icon"><i class="fas fa-cart-plus"></i></span>
                                     <span class="btn-inner--text">Purchase now</span>
                                 </a>
