@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/layout'
 
 
-export default function Home() {
+export default function Home({ events }) {
         return (
             <Layout>
             <div className="main-content">
@@ -177,3 +177,6 @@ export default function Home() {
             </Layout>
         )
 }
+
+
+

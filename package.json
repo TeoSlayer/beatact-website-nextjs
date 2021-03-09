@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@moxy/next-pre-compression": "^3.0.1",
+    "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.2",
     "react": "^16.7.0",

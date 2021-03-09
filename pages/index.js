@@ -45,8 +45,8 @@ export default function Home() {
                             <p class="lead text-muted lh-180">
                             Do you have a great idea for an event? Are you already an established organiser? Are you looking for a more immersive ticketing experience? Become a Beatact Organiser today !
                             </p>
-                            <a href="" class="btn btn-dark btn-icon rounded-pill hover-scale-110 mt-5">
-                            <span class="btn-inner--text">Learn more</span>
+                            <a href="Features" class="btn btn-dark btn-icon rounded-pill hover-scale-110 mt-5" target="_blank">
+                            <span class="btn-inner--text">Join us today</span>
                             <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
                             </a>
                         </div>
@@ -148,8 +148,6 @@ export default function Home() {
                             <p class="lead lh-180">Start building fast, beautiful and modern looking websites in no time using our theme.</p>
                         </div>
                         </div>
-                        <div class="row">
-                        <div class="col-xl-6">
                             <div id="accordion-2" class="accordion accordion-spaced">
                             <div class="card">
                                 <div class="card-header py-4" id="heading-2-1" data-toggle="collapse" role="button" data-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
@@ -196,8 +194,6 @@ export default function Home() {
                                 </div>
                             </div>
                             </div>
-                        </div>
-                        </div>
                     </div>
                     </section>
                 </div>
