@@ -304,7 +304,7 @@ export default function Home() {
                             <div className="card card-pricing text-center border shadow-none hover-shadow">
                                 <div className="card-header py-5 border-0 delimiter-bottom">
                                 <span className="d-block h5 mb-4">Enterprise</span>
-                                <div className="h1 text-primary text-center mb-0" data-pricing-value><span className="price" />Negotiable</div>
+                                <div className="h1 text-primary text-center mb-0" data-pricing-value=""><span className="price" />Negotiable</div>
                                 <span className="h6 text-muted">Commision</span>
                                 </div>
                                 <div className="card-body">

@@ -12,8 +12,8 @@ export default function Home() {
                         <div class="row">
                             <div class="col-xl-5 col-lg-6 align-self-center">
                             <div class="text-center text-lg-left pb-5">
-                                <h2 class="h1 text-white mb-4">One purpose can change your <span class="text-info typed" id="type-example-1" data-type-this="creativity., energy., life."></span></h2>
-                                <p class="lead lh-180 text-white">With we have optimized the customization process to save your team time when building websites.</p>
+                                <h2 class="h1 text-white mb-4">Here you can find new <span class="text-info typed" id="type-example-1" data-type-this="parties., houseparties., festivals., experiences."></span></h2>
+                                <p class="lead lh-180 text-white">Now you know what you're doing this friday night.</p>
                                 <div class="mt-5">
                                 <a href="#" class="btn btn-app-store hover-translate-y-n3 mr-lg-4 mb-4">
                                     <i class="fab fa-apple"></i>
@@ -36,11 +36,6 @@ export default function Home() {
                         </div>
                         </div>
                     </div>
-                    <div class="shape-container" data-shape-position="bottom">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 220" preserveAspectRatio="none" class="ie-shape-wave-3">
-                        <path d="M918.34,99.41C388.23,343.6,47.11,117.12,0,87.54V220H1600V87.54C1378.72-76.71,1077.32,27.41,918.34,99.41Z"></path>
-                        </svg>
-                    </div>
                     </section>
                     <section class="slice slice-lg">
                     <div class="container">
@@ -48,33 +43,12 @@ export default function Home() {
                         <h1>It's time to change the game</h1>
                         <div class="fluid-paragraph mt-4">
                             <p class="lead text-muted lh-180">
-                            Purpose is a great UI package based on Bootstrap 4 that includes the most important components and features so you can jumpstart the hard work and get right to the website creation fast and easy.
+                            Do you have a great idea for an event? Are you already an established organiser? Are you looking for a more immersive ticketing experience? Become a Beatact Organiser today !
                             </p>
-                            <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" class="btn btn-dark btn-icon rounded-pill hover-scale-110 mt-5">
-                            <span class="btn-inner--text">Let's get started</span>
+                            <a href="" class="btn btn-dark btn-icon rounded-pill hover-scale-110 mt-5">
+                            <span class="btn-inner--text">Learn more</span>
                             <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
                             </a>
-                        </div>
-                        </div>
-                    </div>
-                    </section>
-                    <section class="slice slice-lg">
-                    <div class="container">
-                        <div class="row row-grid align-items-center justify-content-around">
-                        <div class="col-lg-5 order-lg-2">
-                            <div class="pr-md-4">
-                            <h5 class="h3">Change the way you build wesites. Forever.</h5>
-                            <p class="text-muted lead my-4">With Boomerang you get components and examples, including tons of variables that will help you customize this theme with ease.</p>
-                            <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-primary rounded-pill btn-icon mt-4">
-                                <span class="btn-inner--icon"><i class="fas fa-cart-plus"></i></span>
-                                <span class="btn-inner--text">Purchase now</span>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                            <div class="position-relative">
-                            <img alt="Image placeholder" src="../static/assets/template/assets/img/theme/light/app-3.png" class="img-center img-fluid"/>
-                            </div>
                         </div>
                         </div>
                     </div>
@@ -84,7 +58,7 @@ export default function Home() {
                         <div class="mb-5 text-center">
                         <h3 class="text-white mt-4">Powerful features</h3>
                         <div class="fluid-paragraph mt-3">
-                            <p class="lead lh-180 text-white">Start building fast, beautiful and modern looking websites in no time using our theme.</p>
+                            <p class="lead lh-180 text-white">Tools and Functions that you'll love! Raving like never before!</p>
                         </div>
                         </div>
                         <div class="row row-grid align-items-center">
@@ -92,34 +66,34 @@ export default function Home() {
                             <div class="d-flex align-items-start mb-5">
                             <div class="pr-4">
                                 <div class="icon icon-shape bg-white text-primary box-shadow-3 rounded-circle">
-                                <i class="fas fa-expand"></i>
+                                <i class="fas fa-thumbs-up"></i>
                                 </div>
                             </div>
                             <div class="icon-text">
-                                <h5 class="h5 text-white">Responsive web design</h5>
-                                <p class="mb-0 text-white">Modular and interchangable componente between layouts and even demos.</p>
+                                <h5 class="h5 text-white">Easy to use</h5>
+                                <p class="mb-0 text-white">Raving was never this easy before.</p>
                             </div>
                             </div>
                             <div class="d-flex align-items-start mb-5">
                             <div class="pr-4">
                                 <div class="icon icon-shape bg-white text-primary box-shadow-3 rounded-circle">
-                                <i class="fas fa-box-open"></i>
+                                <i class="fas fa-credit-card"></i>
                                 </div>
                             </div>
                             <div class="icon-text">
-                                <h5 class="text-white">Loaded with features</h5>
-                                <p class="mb-0 text-white">Modular and interchangable componente between layouts and even demos.</p>
+                                <h5 class="text-white">International Payments</h5>
+                                <p class="mb-0 text-white">Pay for tickets using Credit Cards, Apple Pay and Google Pay.</p>
                             </div>
                             </div>
                             <div class="d-flex align-items-start">
                             <div class="pr-4">
                                 <div class="icon icon-shape bg-white text-primary box-shadow-3 rounded-circle">
-                                <i class="fas fa-smile"></i>
+                                <i class="fas fa-star"></i>
                                 </div>
                             </div>
                             <div class="icon-text">
-                                <h5 class="text-white">Friendly online support</h5>
-                                <p class="mb-0 text-white">Modular and interchangable componente between layouts and even demos.</p>
+                                <h5 class="text-white">Rating System</h5>
+                                <p class="mb-0 text-white">Know what to expect before attending an event.</p>
                             </div>
                             </div>
                         </div>
@@ -132,34 +106,34 @@ export default function Home() {
                             <div class="d-flex align-items-start mb-5">
                             <div class="pr-4">
                                 <div class="icon icon-shape bg-white text-primary box-shadow-3 rounded-circle">
-                                <i class="fas fa-file-archive"></i>
+                                <i class="fas fa-tools"></i>
                                 </div>
                             </div>
                             <div class="icon-text">
-                                <h5 class="text-white">Free updates forever</h5>
-                                <p class="mb-0 text-white">Modular and interchangable componente between layouts and even demos.</p>
+                                <h5 class="text-white">Loaded with features</h5>
+                                <p class="mb-0 text-white">Widgets, App Clips, Passes for Apple Wallet and Google Pay Wallet and much more!</p>
                             </div>
                             </div>
                             <div class="d-flex align-items-start mb-5">
                             <div class="pr-4">
                                 <div class="icon icon-shape bg-white text-primary box-shadow-3 rounded-circle">
-                                <i class="fab fa-sass"></i>
+                                <i class="fas fa-gamepad"></i>
                                 </div>
                             </div>
                             <div class="icon-text">
-                                <h5 class="text-white">Built with Sass</h5>
-                                <p class="mb-0 text-white">Modular and interchangable componente between layouts and even demos.</p>
+                                <h5 class="text-white">Gamified feel</h5>
+                                <p class="mb-0 text-white">Compete with users locally to win Tickets to your preffered events.</p>
                             </div>
                             </div>
                             <div class="d-flex align-items-start">
                             <div class="pr-4">
                                 <div class="icon icon-shape bg-white text-primary box-shadow-3 rounded-circle">
-                                <i class="fas fa-palette"></i>
+                                <i class="fas fa-search"></i>
                                 </div>
                             </div>
                             <div class="icon-text">
-                                <h5 class="text-white">Infinite colors</h5>
-                                <p class="mb-0 text-white">Modular and interchangable componente between layouts and even demos.</p>
+                                <h5 class="text-white">Party lookup</h5>
+                                <p class="mb-0 text-white">Find your favorite parties and events.</p>
                             </div>
                             </div>
                         </div>
@@ -176,68 +150,48 @@ export default function Home() {
                         </div>
                         <div class="row">
                         <div class="col-xl-6">
-                            <div id="accordion-1" class="accordion accordion-spaced">
-                            <div class="card">
-                                <div class="card-header py-4" id="heading-1-1" data-toggle="collapse" role="button" data-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
-                                <h6 class="mb-0"><i class="fas fa-file-pdf mr-3"></i>Which license do I need?</h6>
-                                </div>
-                                <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1" data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header py-4" id="heading-1-2" data-toggle="collapse" role="button" data-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
-                                <h6 class="mb-0"><i class="fas fa-lock mr-3"></i>How do I get access to a theme?</h6>
-                                </div>
-                                <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2" data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header py-4" id="heading-1-3" data-toggle="collapse" role="button" data-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
-                                <h6 class="mb-0"><i class="fas fa-credit-card mr-3"></i>How do I see previous orders?</h6>
-                                </div>
-                                <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3" data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
                             <div id="accordion-2" class="accordion accordion-spaced">
                             <div class="card">
                                 <div class="card-header py-4" id="heading-2-1" data-toggle="collapse" role="button" data-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
-                                <h6 class="mb-0"><i class="fas fa-file-pdf mr-3"></i>Which license do I need?</h6>
+                                <h6 class="mb-0"><i class="fas fa-user-plus mr-3"></i>Do I need an account to use Beatact?</h6>
                                 </div>
                                 <div id="collapse-2-1" class="collapse" aria-labelledby="heading-2-1" data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                    <p>Yes, In order for business to be conducted between the organisers and yourself you have to be registered as a Beatact User.</p>
                                 </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header py-4" id="heading-2-2" data-toggle="collapse" role="button" data-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
-                                <h6 class="mb-0"><i class="fas fa-lock mr-3"></i>How do I get access to a theme?</h6>
+                                <h6 class="mb-0"><i class="fas fa-question-circle mr-3"></i>I have a question about an event. Who do I speak to?</h6>
                                 </div>
                                 <div id="collapse-2-2" class="collapse" aria-labelledby="heading-2-2" data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                    <p>In order to receive more information about a specific event, your best bet is to get in contact with the event organiser, due to the fact that Beactact doesn't have direct implication with the events.</p>
+                                    <p>You can get in direct contact with an organiser by clicking on the Contact button on the specified event, which will forward you to the organisers profile, where you can find all the contact information.</p>
                                 </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header py-4" id="heading-2-3" data-toggle="collapse" role="button" data-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
-                                <h6 class="mb-0"><i class="fas fa-credit-card mr-3"></i>How do I see previous orders?</h6>
+                                <h6 class="mb-0"><i class="fas fa-credit-card mr-3"></i>How do I buy a ticket on Beatact?</h6>
                                 </div>
                                 <div id="collapse-2-3" class="collapse" aria-labelledby="heading-2-3" data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                                    <p>In order to buy a ticket you have to have the following:</p>
+                                    <li>
+                                    A Beatact Account.                                    </li>
+                                    <li>
+                                    A Valid Payment Method(Credit Card, Apple Pay or Google Pay).
+                                    </li>
+                                    <li>
+                                    A minute to spare.
+                                    </li>
+                                    <p>When you found the desired event you can either directly press “Buy” or “View More”. If you pressed “View More”, in order to continue with the payment, you have to press on the “Order” button. Then, when you’re on the “Order Ticket” Page you will be able to access the Organiser’s Terms of Service. In order to continue with the payment you will have to agree to those terms.</p>
+                                    <p><strong>Important Note:</strong> The organiser’s terms of service is a legally binding contract. By checking the “I agree to the Terms of Service” you hereby agree with the organiser’s terms for that specific event. This may include but is not limited to: Refund Policy, General Rules of the event.</p>
+                                    <p>Then you can press on either “Select Payment” or “Order with Apple Pay”/”Order with Google Pay”. If you pressed on “Select Payment” you will either have to select the desired payment method(if you have one already existing) or add a new payment method by pressing “Add payment method”. </p>
+                                    <p>Then you can press on “Pay Now” and your order will be placed. You will receive a confirmation message if the payment was successful or an error message if it wasn’t.</p>
+                                    <p>Your ticket will be available within the “Orders” tab, you will receive a confirmation and an invoice on your email.</p>
                                 </div>
                                 </div>
                             </div>
