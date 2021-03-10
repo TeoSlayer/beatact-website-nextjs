@@ -1,14 +1,12 @@
 import React from 'react'
-import Layout from '../components/layout'
-
+import Link from 'next/link'
 
 export default function Home() {
         return (
-            <Layout>
                 <div className="main-content">
-                {/* Header (v9) */}
+                <title>Features</title>
+                <meta name="description" content="View all the features of Beatact."/>
                 <section className="slice slice-xl bg-gradient-primary" style={{paddingBottom: 150}}>
-                    {/* SVG background */}
                     <div className="bg-absolute-cover bg-size--contain d-flex align-items-center">
                     </div>
                     <div className="container py-5 position-relative zindex-100">
@@ -18,9 +16,9 @@ export default function Home() {
                             <h1 className="text-white mt-4 mb-3">Unleash your creativity</h1>
                             <p className="lead lh-180 text-white">Big or small, funky or chill you can turn your Party Idea into a Party Reality.</p>
                             <div className="mt-6">
-                            <a href="#" className="btn btn-white btn-icon rounded-pill hover-translate-y-n3">
-                                <span className="btn-inner--text">Sign Up as a Beatact Organiser</span>
-                            </a>
+                            <Link href="#" className="btn btn-white btn-icon rounded-pill hover-translate-y-n3">
+                                    <button className="btn btn-white btn-icon rounded-pill hover-translate-y-n3 btn-inner--text">Sign Up as a Beatact Organiser</button>
+                             </Link>
                             </div>
                         </div>
                         </div>
@@ -328,7 +326,6 @@ export default function Home() {
                     </div>
                 </section>
                 </div>
-            </Layout>
         )
 }
 

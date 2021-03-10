@@ -1,11 +1,11 @@
 import React from 'react'
-import Layout from '../components/layout'
-
+import Head from  'next/document'
 
 export default function Home() {
         return (
-            <Layout>
                 <div class="main-content">
+                    <title>Beatact - Made for Ravers, By Ravers</title>
+                    <meta name="description" content="Beatact is the first centralized platform for techno/edm/electro parties and events."/>
                     <section class="slice slice-lg bg-gradient-primary" data-offset-top="#header-main">
                     <div class="container py-6 py-lg-0 d-flex align-items-center position-relative zindex-100">
                         <div class="col">
@@ -197,6 +197,6 @@ export default function Home() {
                     </div>
                     </section>
                 </div>
-            </Layout>
+                
         )
 }

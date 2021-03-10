@@ -1,5 +1,6 @@
-import React from 'react'
 
+import React from 'react'
+import Link from 'next/link'
 export default class AppFooter extends React.Component {
     render() {
         return (
@@ -8,30 +9,56 @@ export default class AppFooter extends React.Component {
                 <div class="container">
                     <div class="row pt-md">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <a href="index.html">
-                        <img src="../static/assets/template/assets/img/brand/white.png" alt="Footer logo" style={{height: '70px'}} />
-                        </a>
-                        <p></p>
+                        <Link href="/">
+                                <img src="../static/assets/template/assets/img/brand/white.png" alt="Footer logo" style={{height: '70px'}} />
+                        </Link>
                     </div>
                     <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Support</h6>
                         <ul class="list-unstyled">
-                        <li><a href="#">FAQ Organisers</a></li>
-                        <li><a href="#">FAQ Customers</a></li>
+                        <li>
+                            <Link href="#">
+                                 <a href="#">FAQ Organisers</a>
+                            </Link>
+                            
+                        </li>
+                        <li>
+                            <Link href="#">
+                             <a href="#">FAQ Customers</a>
+                            </Link>
+                        </li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
                         <h6 class="heading mb-3">About</h6>
-                        <ul class="list-unstyled text-small">
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <ul class="list-unstyled">
+                        <li>
+                            <Link href="#">
+                                 <a href="#">About Us</a>
+                            </Link>
+                            
+                        </li>
+                        <li>
+                            <Link href="#">
+                             <a href="#">Contact Us</a>
+                            </Link>
+                        </li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-sm-4 mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Company</h6>
                         <ul class="list-unstyled">
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Privacy</a></li>
+                        <li>
+                            <Link href="#">
+                                 <a href="#">Terms and Conditions</a>
+                            </Link>
+                            
+                        </li>
+                        <li>
+                            <Link href="#">
+                             <a href="#">Privacy Policy</a>
+                            </Link>
+                        </li>
                         </ul>
                     </div>
                     </div>

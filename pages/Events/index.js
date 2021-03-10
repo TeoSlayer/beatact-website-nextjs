@@ -3,9 +3,11 @@ import Layout from '../../components/layout'
 
 
 export default function Home({ events }) {
+        
         return (
-            <Layout>
             <div className="main-content">
+                <title>Events</title>
+                <meta name="description" content="View the latest events shown on Beatact. Download the app today and get a ticket."/>
                 <section className="slice slice-xl bg-cover bg-size--cover" data-offset-top="#header-main" style={{backgroundImage: 'url(../../static/assets/template/assets/img/backgrounds/img-5.jpg)', width: '100%',backgroundSize: 'cover'}}>
                     <span className="mask bg-gradient-primary opacity-6" />
                     <div className="container-fluid py-6 py-lg-9">
@@ -94,6 +96,7 @@ export default function Home({ events }) {
                             </div>
                         </div>
                         </div>
+                        
                         <div className="col-lg-6">
                         <div className="mb-4">
                             <h3 className="heading h3 text-white text-uppercase mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>July</h3>
@@ -173,8 +176,6 @@ export default function Home({ events }) {
                     </div>
                 </section>
                 </div>
-
-            </Layout>
         )
 }
 

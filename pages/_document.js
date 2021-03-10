@@ -1,12 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
-    static async getInitialProps(ctx) {
-        const initialProps = await Document.getInitialProps(ctx);
-        let props = { ...initialProps };
-
-        return props;
-    }
 
     render() {
         return (
@@ -17,7 +11,6 @@ export default class MyDocument extends Document {
                     <meta name="description" content="Beatact is the first centralized platform for techno/edm/electro parties and events."/>
                     <meta name="author" content="Beatact"/>
                     <link rel="icon" href="../static/assets/template/assets/img/brand/favicon.png" type="image/png"></link>
-                    <title>Beatact - Made for Ravers, By Ravers</title>
                     <link rel="stylesheet" href="../static/assets/template/assets/libs/@fortawesome/fontawesome-free/css/all.min.css"/>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light"/>
                     <link rel="stylesheet" href="../static/assets/template/assets/libs/swiper/dist/css/swiper.min.css"/>

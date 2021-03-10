@@ -1,3 +1,5 @@
-const withPreCompression = require('@moxy/next-pre-compression');
-const nextConfig = require('next/config');
-module.exports = withPreCompression({ ...nextConfig });
+module.exports = {
+    devIndicators: {
+      autoPrerender: false
+    }
+  }
