@@ -49,14 +49,14 @@ export default class AppFooter extends React.Component {
                         <h6 class="heading mb-3">Company</h6>
                         <ul class="list-unstyled">
                         <li>
-                            <Link href="#">
-                                 <a href="#">Terms and Conditions</a>
+                            <Link href="/Legal/T&C">
+                                 <a>Terms and Conditions</a>
                             </Link>
                             
                         </li>
                         <li>
-                            <Link href="#">
-                             <a href="#">Privacy Policy</a>
+                            <Link href="/Legal/PrivacyPolicy">
+                                 <a>Privacy Policy</a>
                             </Link>
                         </li>
                         </ul>

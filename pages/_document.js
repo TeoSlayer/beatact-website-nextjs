@@ -25,6 +25,8 @@ export default class MyDocument extends Document {
                     <script src="../static/assets/template/assets/libs/typed.js/lib/typed.min.js"></script>
                     <script src="../static/assets/template/assets/js/purpose.js"></script>
                     <script src="../static/assets/template/assets/js/demo.js"></script>
+                    <script src="../static/assets/template/assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+                    <script src="../static/assets/template/assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
                 </body>
             </html>
         );

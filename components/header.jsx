@@ -62,45 +62,41 @@ export default class AppHeader extends React.Component {
             }
         ];*/
         return (
-         <header class="header header-transparent" id="header-main">
-        
-         <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark" id="navbar-main">
-           <div class="container px-lg-0">
-          
-            <Link href="/">
-              <a class="navbar-brand mr-lg-5" href="">
-               <img alt="Image placeholder" src="../static/assets/template/assets/img/brand/white.png" id="navbar-logo" style={{height: '50px'}} />
-              </a>
-            </Link>
-             
-           
-             <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             
-             <div class="collapse navbar-collapse" id="navbar-main-collapse">
+       <header class="header header-transparent" id="header-main">
+    <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark" id="navbar-main">
+      <div class="container px-lg-0">
+        <Link class="navbar-brand mr-lg-5" href="/">
+          <img alt="Image placeholder" src="../static/assets/template/assets/img/brand/white.png" id="navbar-logo" style={{height: '50px'}} />
+        </Link>
+        <button className="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main-collapse">
                <ul class="navbar-nav align-items-lg-center">
                  <li class="nav-item ">
                    <Link class="nav-link" href="/">
-                      <a href="#" class="nav-link">Home</a>
+                      <a class="nav-link">Home</a>
                    </Link>
                  </li>
                  <li class="nav-item ">
                    <Link href="/Events">
-                     <a href="#" class="nav-link">Events</a>
+                     <a class="nav-link">Events</a>
                    </Link>
                  </li>
                  <li class="nav-item ">
                    <Link class="nav-link" href="/Features">
-                      <a href="#" class="nav-link">Features</a>
+                      <a class="nav-link">Features</a>
                    </Link>
                  </li>
      
                </ul>
              </div>
-           </div>
-         </nav>
-       </header>
+      </div>
+    </nav>
+      </header>
         )
     }
 }
+
+
+   

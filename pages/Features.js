@@ -73,11 +73,6 @@ export default function Home() {
                     </div>
                     </div>
                     {/* SVG shape */}
-                    <figure className="shape-container shape-position-bottom">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 1000 300" style={{enableBackground: 'new 0 0 1000 300'}} xmlSpace="preserve" className="ie-shape-wave-1">
-                        <path d="M 0 246.131 C 0 246.131 31.631 250.035 47.487 249.429 C 65.149 248.755 82.784 245.945 99.944 241.732 C 184.214 221.045 222.601 171.885 309.221 166.413 C 369.892 162.581 514.918 201.709 573.164 201.709 C 714.375 201.709 772.023 48.574 910.547 21.276 C 939.811 15.509 1000 24.025 1000 24.025 L 1000 300.559 L -0.002 300.559 L 0 246.131 Z" />
-                    </svg>
-                    </figure>
                 </section>
                 {/* Features (v20) */}
                 <section className="slice slice-lg">
