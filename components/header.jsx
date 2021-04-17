@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-
+import { useState } from 'react';
 export default class AppHeader extends React.Component {
+    
     constructor() {
         super();
         this.state = {
@@ -62,6 +63,7 @@ export default class AppHeader extends React.Component {
             }
         ];*/
         return (
+          
        <header class="header header-transparent" id="header-main">
     <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark" id="navbar-main">
       <div class="container px-lg-0">
@@ -74,33 +76,14 @@ export default class AppHeader extends React.Component {
         <div class="collapse navbar-collapse" id="navbar-main-collapse">
                <ul class="navbar-nav align-items-lg-center">
                  <li class="nav-item ">
-                   <Link class="nav-link" href="/">
-<<<<<<< Updated upstream
-                      <a class="nav-link">Home</a>
-=======
-                      <a href="/" class="nav-link">Home</a>
->>>>>>> Stashed changes
-                   </Link>
+                      <a class="nav-link" href="/">Home</a>
                  </li>
                  <li class="nav-item ">
-                   <Link href="/Events">
-<<<<<<< Updated upstream
-                     <a class="nav-link">Events</a>
-=======
-                     <a href="/Events" class="nav-link">Events</a>
->>>>>>> Stashed changes
-                   </Link>
+                     <a class="nav-link" href="/Events">Events</a>
                  </li>
                  <li class="nav-item ">
-                   <Link class="nav-link" href="/Features">
-<<<<<<< Updated upstream
-                      <a class="nav-link">Features</a>
-=======
-                      <a href="/Features" class="nav-link">Features</a>
->>>>>>> Stashed changes
-                   </Link>
+                      <a class="nav-link" href="/Features">Features</a>                
                  </li>
-     
                </ul>
              </div>
       </div>

@@ -16,7 +16,7 @@ export default function Home() {
                             <h1 className="text-white mt-4 mb-3">Unleash your creativity</h1>
                             <p className="lead lh-180 text-white">Big or small, funky or chill you can turn your Party Idea into a Party Reality.</p>
                             <div className="mt-6">
-                            <Link href="#" className="btn btn-white btn-icon rounded-pill hover-translate-y-n3">
+                            <Link href="" className="btn btn-white btn-icon rounded-pill hover-translate-y-n3">
                                     <button className="btn btn-white btn-icon rounded-pill hover-translate-y-n3 btn-inner--text">Sign Up as a Beatact Organiser</button>
                              </Link>
                             </div>
