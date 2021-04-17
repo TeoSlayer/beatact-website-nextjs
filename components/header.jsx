@@ -75,17 +75,29 @@ export default class AppHeader extends React.Component {
                <ul class="navbar-nav align-items-lg-center">
                  <li class="nav-item ">
                    <Link class="nav-link" href="/">
+<<<<<<< Updated upstream
                       <a class="nav-link">Home</a>
+=======
+                      <a href="/" class="nav-link">Home</a>
+>>>>>>> Stashed changes
                    </Link>
                  </li>
                  <li class="nav-item ">
                    <Link href="/Events">
+<<<<<<< Updated upstream
                      <a class="nav-link">Events</a>
+=======
+                     <a href="/Events" class="nav-link">Events</a>
+>>>>>>> Stashed changes
                    </Link>
                  </li>
                  <li class="nav-item ">
                    <Link class="nav-link" href="/Features">
+<<<<<<< Updated upstream
                       <a class="nav-link">Features</a>
+=======
+                      <a href="/Features" class="nav-link">Features</a>
+>>>>>>> Stashed changes
                    </Link>
                  </li>
      
