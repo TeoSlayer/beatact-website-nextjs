@@ -11,7 +11,7 @@ export default function Home() {
                         <div class="row">
                             <div class="col-xl-5 col-lg-6 align-self-center">
                             <div class="text-center text-lg-left pb-5">
-                                <h2 class="h1 text-white mb-4">Here you can find new <span class="text-info typed" id="type-example-1" data-type-this="parties., houseparties., festivals., experiences."></span></h2>
+                                <h2 class="h1 text-white mb-4">Here you can find new <span class="text-info typed" id="type-example-1" data-type-this="parties., houseparties., festivals., experiences.">experiences.</span></h2>
                                 <p class="lead lh-180 text-white">Now you know what you're doing this friday night.</p>
                                 <div class="mt-5">
                                 <a href="#" class="btn btn-app-store hover-translate-y-n3 mr-lg-4 mb-4">

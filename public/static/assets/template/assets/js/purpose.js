@@ -537,8 +537,6 @@ var NavbarCollapse = (function() {
 	}
 
 
-	// Events
-
     if ($collapse.length) {
     	$collapse.on({
     		'show.bs.collapse': function() {

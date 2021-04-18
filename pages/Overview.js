@@ -226,7 +226,7 @@ export default function Home() {
                         <div className="row">
                         <div className="col-xl-5 col-lg-6 align-self-center">
                             <div className="text-center text-lg-left pb-5">
-                            <h2 className="h1 text-white mb-4"><span className="text-info typed" id="type-example-1" data-type-this="Sell, Buy" /> tickets is minutes.</h2>
+                            <h2 className="h1 text-white mb-4"><span className="text-info typed" id="type-example-1" data-type-this="Sell, Buy"> Buy</span> tickets is minutes.</h2>
                             <p className="lead lh-180 text-white">It only takes 1 minute to buy a ticket on Beatact and only 5 minutes to create an event!</p>
                             <h6 style={{color: 'white'}}>*Tested on an iPhone 7*</h6>
                             </div>
@@ -277,8 +277,8 @@ export default function Home() {
                             <div className="card card-pricing text-center popular scale-110">
                                 <div className="card-header py-5 border-0 delimiter-bottom">
                                 <span className="d-block h5 mb-4">Standard</span>
-                                <div className="h1 text-primary text-center mb-0" data-pricing-value={4}><span className="price">5</span>%</div>
-                                <span className="h6 text-muted">Commision</span>
+                                <div className="h1 text-primary text-center mb-0" data-pricing-value={4}><span className="price">5</span>% + 1RON</div>
+                                <span className="h6 text-muted">Commision(max 50RON)</span>
                                 </div>
                                 <div className="card-body">
                                 <ul className="list-unstyled mb-4">
@@ -298,7 +298,7 @@ export default function Home() {
                                 <div className="card-header py-5 border-0 delimiter-bottom">
                                 <span className="d-block h5 mb-4">Enterprise</span>
                                 <div className="h1 text-primary text-center mb-0" data-pricing-value=""><span className="price" />Negotiable</div>
-                                <span className="h6 text-muted">Commision</span>
+                                <span className="h6 text-muted">Commision(max 50RON)</span>
                                 </div>
                                 <div className="card-body">
                                 <ul className="list-unstyled mb-4">
