@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-
+import { NextSeo } from 'next-seo';
 export default function Home() {
         return (
-            <div className="main-content">
+    <>
+      <NextSeo noindex={true} />
+      <div className="main-content">
         <title>Terms and Conditions</title>
         {/* Spotlight */}
         <section className="slice slice-lg bg-gradient-primary" data-offset-top="#header-main">
@@ -223,5 +225,6 @@ export default function Home() {
         </section>
         {/* Call to action (v5) */}
       </div>
-        )
+    </>
+      )
 }

@@ -1,10 +1,35 @@
 import React from 'react'
+import { Head, Main, NextScript, Html } from 'next/document'
+import { NextSeo } from 'next-seo';
+
 
 export default function Home() {
+         if (process.browser) {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                    "background": "#edeff5",
+                    "text": "#838391"
+                    },
+                    "button": {
+                    "background": "#7653db"
+                    }
+                },
+                "content": {
+                    "message": "This website uses cookies. We know that many of you don't really take that into account but unfortunately the law tells us that we have to specify it in our website.",
+                    "dismiss": "Sure!",
+                    "link": "Privacy Policy",
+                    "href": "www.beatact.net/Legal/PrivacyPolicy"
+                }
+             });
+         }
         return (
+            <>
+                <NextSeo
+                title="Beatact - The first app for ravers made by ravers"
+                description="The first app made specificaly for electronic music parties or events."
+                />
                 <div class="main-content">
-                    <title>Beatact - Made for Ravers, By Ravers</title>
-                    <meta name="description" content="Beatact is the first centralized platform for techno/edm/electro parties and events."/>
                     <section class="slice slice-lg bg-gradient-primary" data-offset-top="#header-main">
                     <div class="container py-6 py-lg-0 d-flex align-items-center position-relative zindex-100">
                         <div class="col">
@@ -144,7 +169,7 @@ export default function Home() {
                         <div class="mb-5 text-center">
                         <h3 class=" mt-4">Helpful answers</h3>
                         <div class="fluid-paragraph mt-3">
-                            <p class="lead lh-180">Start building fast, beautiful and modern looking websites in no time using our theme.</p>
+                            <p class="lead lh-180">Definitely not all of them but it's better than nothing for a start. You can find more answers in the FAQ or by emailing us directly at: help@beatact.net.</p>
                         </div>
                         </div>
                             <div id="accordion-2" class="accordion accordion-spaced">
@@ -196,6 +221,6 @@ export default function Home() {
                     </div>
                     </section>
                 </div>
-                
+            </>
         )
 }

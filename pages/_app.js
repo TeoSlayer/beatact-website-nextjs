@@ -1,12 +1,13 @@
 import { Body } from 'node-fetch';
-import Layout from '../components/layout';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
 // Custom App to wrap it with context provider
 export default function App({ Component, pageProps }) {
   return (
-      <body>
-      <Layout>
-      <Component {...pageProps} />
-      </Layout>
-      </body>
+    <>
+        <Header/>
+          <Component {...pageProps} />
+        <Footer/>
+    </>
   )
 }

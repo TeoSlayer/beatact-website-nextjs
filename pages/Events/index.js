@@ -1,10 +1,14 @@
 import React from 'react'
-import Layout from '../../components/layout'
-
+import { NextSeo } from 'next-seo';
 
 export default function Home({ events }) {
         
         return (
+        <>
+            <NextSeo
+                title="Events - View the most engaging events of today and tommorow."
+                description="Interested to go to an event? Download Beatact today from your preffered app store and rave on."
+            />
             <div className="main-content">
                 <title>Events</title>
                 <meta name="description" content="View the latest events shown on Beatact. Download the app today and get a ticket."/>
@@ -18,7 +22,7 @@ export default function Home({ events }) {
                             <h2 className="display-1 font-weight-600 text-white text-uppercase mb-2" style={{fontFamily: '"Oswald", sans-serif'}}>Good music only</h2>
                             <div className="btn-group mt-4">
                             <button type="button" className="btn btn-dark rounded-left-pill" disabled style={{cursor: 'default'}}>
-                                <span className="countdown" data-countdown-date="12/01/2019" data-countdown-label="hide" />
+                                <span className="countdown" data-countdown-date="12/01/2019"/>
                             </button>
                             <a href="#" className="btn btn-white rounded-right-pill text-uppercase" style={{fontFamily: '"Oswald", sans-serif', lineHeight: '2.2'}}>Buy Tickets On Beatact</a>
                             </div>
@@ -176,6 +180,7 @@ export default function Home({ events }) {
                     </div>
                 </section>
                 </div>
+        </>
         )
 }
 

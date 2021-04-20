@@ -1,8 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-
+import { NextSeo } from 'next-seo';
 export default function Home() {
         return (
+            <>
+                <NextSeo
+                title="Beatact - The first app for ravers made by ravers"
+                description="The first app made specificaly for electronic music parties or events."
+                />
                 <div className="main-content">
                 <title>Features</title>
                 <meta name="description" content="View all the features of Beatact."/>
@@ -321,6 +326,7 @@ export default function Home() {
                     </div>
                 </section>
                 </div>
+            </>
         )
 }
 
