@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://beatact.net
+
+# Sitemaps
+Sitemap: https://beatact.net/sitemap.xml
