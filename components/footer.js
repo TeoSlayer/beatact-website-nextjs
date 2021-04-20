@@ -48,7 +48,7 @@ export  function Footer(){
                         <h6 class="heading mb-3">Company</h6>
                         <ul class="list-unstyled">
                         <li>
-                            <Link href="/Legal/T&C">
+                            <Link href="/Legal/Terms">
                                  <a>Terms and Conditions</a>
                             </Link>
                             
