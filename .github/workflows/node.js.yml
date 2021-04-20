@@ -29,7 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run-script build
     - run: npm run-script postbuild
-    - run: npm run-script export
+    - run: npm run-script start -p 3000
     
     
     
