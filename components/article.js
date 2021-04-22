@@ -3,12 +3,42 @@ import { NextSeo } from 'next-seo';
 
 export  function Article({ post, morePosts }) {
 
+    const keywords = post.seo.keywords.join()
+    const tags = post.tags
+
     return (
         <>
             <NextSeo
-                title={post.title}
-                description={post.title}
-                //description=
+                title={post.seo.title}
+                description={post.seo.description}
+                additionalMetaTags={[{
+                    property: 'keywords',
+                    content: keywords,
+                  }, {
+                    name: 'application-name',
+                    content: 'Beatact'
+                  }, {
+                    httpEquiv: 'x-ua-compatible',
+                    content: 'IE=edge; chrome=1'
+                  }]}
+                openGraph={{
+                    title: post.title,
+                    description: post.description,
+                    url: 'https://www.beatact.net/Blog/' + post.slug,
+                    type: 'Article',
+                    article: {
+                      tags: tags,
+                    },
+                    images: [
+                      {
+                        url: post.coverImage.url,
+                        width: 850,
+                        height: 650,
+                        alt: 'Article Photo',
+                      },
+                    ],
+                  }}
+                
             />
             <section className="slice slice-lg bg-gradient-primary">
             <div className="container pt-6">
@@ -39,7 +69,14 @@ export  function Article({ post, morePosts }) {
                     <article>
                     <div dangerouslySetInnerHTML={{ __html: post.content?.html }} />
                     </article>
-                    <hr />
+                    <div className="d-flex align-items-center mt-4">
+                        <li class="list-inline-item pr-3">
+                        <h6>Tags:</h6>
+                        <>
+                            {post.tags.map((tag) => { return <span class="badge badge-pill badge-soft-primary">{tag}</span>})}
+                        </>
+                        </li>
+                    </div>
                     </div>
                     </div>
             </div>

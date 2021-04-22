@@ -85,21 +85,31 @@ async function fetchAPI(query, { variables, preview } = {}) {
       `
       query PostBySlug($slug: String!, $stage: Stage!) {
         post(stage: $stage, where: {slug: $slug}) {
-          title
-          slug
-          content {
-            html
-          }
-          date
-          coverImage {
-            url
-          }
-          author {
-            name
-            picture {
+            title
+            seo {
+              keywords
+              description
+              title
+              image {
+                url
+              }
+            }
+            coverImage{
               url
             }
-          }
+            date
+            author {
+              name
+              picture {
+                url
+              }
+            }
+            content {
+              html
+            }
+            subtitle
+            tags
+            slug
         }
         morePosts: posts(orderBy: date_DESC, first: 3, where: {slug_not_in: [$slug]}) {
           title
