@@ -19,7 +19,7 @@ export default function Home() {
                     "message": "This website uses cookies. We know that many of you don't really take that into account but unfortunately the law tells us that we have to specify it in our website.",
                     "dismiss": "Sure!",
                     "link": "Privacy Policy",
-                    "href": "www.beatact.net/Legal/PrivacyPolicy"
+                    "href": "/Legal/PrivacyPolicy"
                 }
              });
          }
