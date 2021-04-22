@@ -73,7 +73,7 @@ export  function Article({ post, morePosts }) {
                         <li class="list-inline-item pr-3">
                         <h6>Tags:</h6>
                         <>
-                            {post.tags.map((tag) => { return <span class="badge badge-pill badge-soft-primary">{tag}</span>})}
+                            {post.tags.slice(0,3).map((tag) => { return <span class="badge badge-pill badge-soft-primary">{tag}</span>})}
                         </>
                         </li>
                     </div>
