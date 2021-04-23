@@ -36,9 +36,17 @@ export function eventToJSON(doc) {
   return {
     ...data,
     // Gotcha! firestore timestamp NOT serializable to JSON. Must convert to milliseconds
-    EndDate : data?.EndDate || 0,
-    StartDate: data?.StartDate || 0,
-    createdAt: data?.createdAt || 0,
-    updatedAt: data?.updatedAt || 0,
+    StartDate: data?.StartDate.toMillis() || 0,
+    EndDate: data?.EndDate.toMillis() || 0,
+    PromotionDate: data?.PromotionDate.toMillis() || 0,
+  };
+}
+
+export function organiserToJSON(doc) {
+  const data = doc.data();
+  return {
+    ...data,
+    // Gotcha! firestore timestamp NOT serializable to JSON. Must convert to milliseconds
+    //CreatedAt: data?.CreatedAt.toMillis() || 0,
   };
 }

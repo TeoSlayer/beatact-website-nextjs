@@ -1,7 +1,21 @@
 import React from 'react'
 import { NextSeo } from 'next-seo';
+import { firestore, eventToJSON } from '../../libs/firebase';
+import moment, { months } from 'moment';
+import { EventFeed } from '../../components/eventwidget';
 
-export default function Home({ events }) {
+export async function getStaticProps({ preview = false }) {
+    const eventQuery1 = firestore.collection("Events").orderBy("StartDate", 'desc').where("StartDate",">=",moment().startOf('month').toDate()).where("StartDate","<=",moment().startOf('month').add('1','month').toDate()).limit(4)
+    const eventQuery2 = firestore.collection("Events").orderBy("StartDate", 'desc').where("StartDate",">=",moment().startOf('month').add('1','month').toDate()).where("StartDate","<=",moment().startOf('month').add('2','month').toDate()).limit(4)
+    const eventsThisMonth = (await eventQuery1.get()).docs.map(eventToJSON);
+    const eventsNextMonth = (await eventQuery2.get()).docs.map(eventToJSON);
+    return {
+      props: { eventsThisMonth, eventsNextMonth, preview },
+    }
+  }
+
+
+export default function Home({ eventsThisMonth, eventsNextMonth }) {
         
         return (
         <>
@@ -31,7 +45,7 @@ export default function Home({ events }) {
                     </div>
                     </div>
                 </section>
-                <section className="slice slice-lg bg-bg-primary bg-cover bg-size--cover" style={{backgroundImage: 'url(../../static/assets/template/assets/img/backgrounds/img-6.jpg)'}}>
+                <section className="slice slice-lg bg-bg-primary bg-primary" >
                     <span className="mask bg-primary opacity-7" />
                     <div className="container">
                     <div className="row row-grid">
@@ -39,142 +53,64 @@ export default function Home({ events }) {
                         <div className="mb-4">
                             <h3 className="heading h3 text-white text-uppercase mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>This month</h3>
                         </div>
-                        <div className="card mb-4">
-                            <div className="card-body">
-                            <div className="row">
-                                <div className="col-md-2">
-                                <span className="d-block text-center text-uppercase text-warning">June</span>
-                                <span className="d-block text-center h1 mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>20</span>
+                        { !eventsThisMonth.length > 0 && (
+                            <div className="card mb-4">
+                                <div className="card-body">
+                                <div className="row">
+                                    <div>
+                                    <span className="align-center text-center text-uppercase text-primary">Nothing here yet...</span>
+                                    </div> 
                                 </div>
-                                <div className="col-md-10 text-center text-md-left">
-                                <h3 className="h5 mb-0">Isle of Wight Festival</h3>
-                                <p className="mb-0">Meet at United Kingdom on June 20th at 20:00</p>
-                                <a href="#" className="font-weight-bold">View More</a>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div className="card mb-4">
-                            <div className="card-body">
-                            <div className="row">
-                                <div className="col-md-2">
-                                <span className="d-block text-center text-uppercase text-warning">June</span>
-                                <span className="d-block text-center h1 mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>22</span>
-                                </div>
-                                <div className="col-md-10 text-center text-md-left">
-                                <h3 className="h5 mb-0">Isle of Wight Festival</h3>
-                                <p className="mb-0">Meet at United Kingdom on June 20th at 20:00</p>
-                                <a href="#">View More</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="card mb-4">
-                            <div className="card-body">
-                            <div className="row">
-                                <div className="col-md-2">
-                                <span className="d-block text-center text-uppercase text-warning">June</span>
-                                <span className="d-block text-center h1 mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>25</span>
-                                </div>
-                                <div className="col-md-10 text-center text-md-left">
-                                <h3 className="h5 mb-0">Isle of Wight Festival</h3>
-                                <p className="mb-0">Meet at United Kingdom on June 20th at 20:00</p>
-                                <a href="#">View More</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="card mb-4">
-                            <div className="card-body">
-                            <div className="row">
-                                <div className="col-md-2">
-                                <span className="d-block text-center text-uppercase text-warning">June</span>
-                                <span className="d-block text-center h1 mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>27</span>
-                                </div>
-                                <div className="col-md-10 text-center text-md-left">
-                                <h3 className="h5 mb-0">Isle of Wight Festival</h3>
-                                <p className="mb-0">Meet at United Kingdom on June 20th at 20:00</p>
-                                <a href="#">View More</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
+                        )
+                        }
+                        
+                        
                         </div>
                         
                         <div className="col-lg-6">
                         <div className="mb-4">
-                            <h3 className="heading h3 text-white text-uppercase mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>July</h3>
+                            <h3 className="heading h3 text-white text-uppercase mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>{moment().add('1', 'month').startOf('month').format('MMM')}</h3>
                         </div>
-                        <div className="card mb-4">
-                            <div className="card-body">
-                            <div className="row">
-                                <div className="col-md-2">
-                                <span className="d-block text-center text-uppercase text-warning">July</span>
-                                <span className="d-block text-center h1 mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>03</span>
+                        { !eventsNextMonth.length > 0 ? (
+                            <div className="card mb-4">
+                                <div className="card-body">
+                                <div className="row">
+                                    <div>
+                                    <span className="align-center text-center text-uppercase text-primary">Nothing here yet...</span>
+                                    </div> 
                                 </div>
-                                <div className="col-md-10 text-center text-md-left">
-                                <h3 className="h5 mb-0">Isle of Wight Festival</h3>
-                                <p className="mb-0">Meet at United Kingdom on June 20th at 20:00</p>
-                                <a href="#">View More</a>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div className="card mb-4">
-                            <div className="card-body">
-                            <div className="row">
-                                <div className="col-md-2">
-                                <span className="d-block text-center text-uppercase text-warning">July</span>
-                                <span className="d-block text-center h1 mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>05</span>
-                                </div>
-                                <div className="col-md-10 text-center text-md-left">
-                                <h3 className="h5 mb-0">Isle of Wight Festival</h3>
-                                <p className="mb-0">Meet at United Kingdom on June 20th at 20:00</p>
-                                <a href="#">View More</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="card mb-4">
-                            <div className="card-body">
-                            <div className="row">
-                                <div className="col-md-2">
-                                <span className="d-block text-center text-uppercase text-warning">July</span>
-                                <span className="d-block text-center h1 mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>13</span>
-                                </div>
-                                <div className="col-md-10 text-center text-md-left">
-                                <h3 className="h5 mb-0">Isle of Wight Festival</h3>
-                                <p className="mb-0">Meet at United Kingdom on June 20th at 20:00</p>
-                                <a href="#">View More</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div className="card mb-4">
-                            <div className="card-body">
-                            <div className="row">
-                                <div className="col-md-2">
-                                <span className="d-block text-center text-uppercase text-warning">July</span>
-                                <span className="d-block text-center h1 mb-0" style={{fontFamily: '"Oswald", sans-serif'}}>15</span>
-                                </div>
-                                <div className="col-md-10 text-center text-md-left">
-                                <h3 className="h5 mb-0">Isle of Wight Festival</h3>
-                                <p className="mb-0">Meet at United Kingdom on June 20th at 20:00</p>
-                                <a href="#">View More</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
+                        ) : (
+                            <>
+                            <EventFeed events={eventsNextMonth}/>
+                            </>
+                        )
+                        }
                         </div>
                     </div>
                     </div>
                 </section>
-                <section className="slice slice-xl bg-primary bg-cover bg-size--cover" style={{backgroundImage: 'url("../../static/assets/template/assets/img/backgrounds/img-6.jpg")'}}>
+                <section className="slice slice-xl bg-primary">
                     <span className="mask bg-primary opacity-7" />
                     <div className="container py-6">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-lg-10 text-center">
                         <h3 className="display-1 font-weight-700 text-white text-uppercase" style={{fontFamily: '"Oswald", sans-serif'}}>You are one step away</h3>
+                        </div>
+                        <div class="mt-5">
+                                <a href="#" class="btn btn-app-store hover-translate-y-n3 mr-lg-4 mb-4">
+                                    <i class="fab fa-apple"></i>
+                                    <span class="btn-inner--text">Download on the</span>
+                                    <span class="btn-inner--brand">App Store</span>
+                                </a>
+                                <a href="#" class="btn btn-app-store hover-translate-y-n3 mb-4">
+                                    <i class="fab fa-google-play"></i>
+                                    <span class="btn-inner--text">Download on the</span>
+                                    <span class="btn-inner--brand">Play Store</span>
+                                </a>
                         </div>
                     </div>
                     </div>
@@ -183,6 +119,8 @@ export default function Home({ events }) {
         </>
         )
 }
+
+
 
 
 
