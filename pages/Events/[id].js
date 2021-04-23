@@ -134,7 +134,7 @@ export default function Home(props) {
                         </a>
                         <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true" />
-                            <span className="sr-only">Next</span>
+                            <span className="sr-only ">Next</span>
                         </a>
                         </div>
                         </div>
