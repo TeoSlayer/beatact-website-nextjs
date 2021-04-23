@@ -4,7 +4,7 @@ import { firestore, eventToJSON } from '../../libs/firebase';
 import moment, { months } from 'moment';
 import { EventFeed } from '../../components/eventwidget';
 
-export async function getStaticProps({ preview = false }) {
+export async function getServerSideProps({ preview = false }) {
     const eventQuery1 = firestore.collection("Events").orderBy("StartDate", 'desc').where("StartDate",">=",moment().startOf('month').toDate()).where("StartDate","<=",moment().startOf('month').add('1','month').toDate()).limit(4)
     const eventQuery2 = firestore.collection("Events").orderBy("StartDate", 'desc').where("StartDate",">=",moment().startOf('month').add('1','month').toDate()).where("StartDate","<=",moment().startOf('month').add('2','month').toDate()).limit(4)
     const eventsThisMonth = (await eventQuery1.get()).docs.map(eventToJSON);
