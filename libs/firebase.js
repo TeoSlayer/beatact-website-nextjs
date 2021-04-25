@@ -36,9 +36,10 @@ export function eventToJSON(doc) {
   return {
     ...data,
     // Gotcha! firestore timestamp NOT serializable to JSON. Must convert to milliseconds
-    StartDate: data?.StartDate.toMillis() || 0,
     EndDate: data?.EndDate.toMillis() || 0,
     PromotionDate: data?.PromotionDate.toMillis() || 0,
+    StartDate: data?.StartDate.toMillis() || 0,
+
   };
 }
 

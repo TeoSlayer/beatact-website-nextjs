@@ -19,13 +19,13 @@ export  function Header(){
                             <a class="nav-link" href="/">Home</a>
                           </li>
                           <li class="nav-item ">
-                            <a class="nav-link" href="/Overview">Overview</a>
+                            <a class="nav-link" href="/overview">Overview</a>
                           </li>
                           <li class="nav-item ">
-                            <a class="nav-link" href="/Events">Events</a>
+                            <a class="nav-link" href="/events">Events</a>
                           </li>
                           <li class="nav-item ">
-                            <a class="nav-link" href="/Blog">Blog</a>
+                            <a class="nav-link" href="/blog">Blog</a>
                           </li>
                       </ul>
                     </div>

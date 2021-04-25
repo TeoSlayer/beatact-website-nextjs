@@ -48,13 +48,13 @@ export  function Footer(){
                         <h6 class="heading mb-3">Company</h6>
                         <ul class="list-unstyled">
                         <li>
-                            <Link href="/Legal/Terms">
+                            <Link href="/legal/Terms">
                                  <a>Terms and Conditions</a>
                             </Link>
                             
                         </li>
                         <li>
-                            <Link href="/Legal/PrivacyPolicy">
+                            <Link href="/legal/PrivacyPolicy">
                                  <a>Privacy Policy</a>
                             </Link>
                         </li>

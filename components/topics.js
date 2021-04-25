@@ -11,7 +11,7 @@ function Topic({ topic }) {
             <>
             <div className="col-lg-4">
                 <div className="card hover-shadow-lg hover-translate-y-n10">
-                            <Link href={"/Blog/" + topic.slug}>
+                            <Link href={"/blog/" + topic.slug}>
                             <img alt="Image placeholder" src={topic.coverImage.url} className="card-img-top" />
                             </Link>
                             <div className="card-body py-5 text-center">

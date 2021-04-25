@@ -21,7 +21,7 @@ function EventItem({ data }) {
                             <div className="col-md-10 text-center text-md-left">
                             <h3 className="h5 mb-0">{data.Name}</h3>
                             <p className="mb-0">{data.Headline}</p>
-                            <a href={"Events/" + data.Id} className="font-weight-bold">View More</a>
+                            <a href={"events/" + data.Id} className="font-weight-bold">View More</a>
                         </div>
                     </div>
                 </div>

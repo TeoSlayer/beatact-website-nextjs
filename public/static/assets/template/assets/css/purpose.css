@@ -15919,7 +15919,7 @@ a.text-muted:hover {
   padding-right: 1.5rem;
 }
 
-.btn-app-store i, .btn-app-store svg {
+.btn-app-store i, .btn-app-store svg, .btn-app-store img {
   font-size: 2.5rem;
   position: absolute;
   left: 1.25rem;
@@ -15945,6 +15945,7 @@ a.text-muted:hover {
   background-color: #5f00db;
   color: #FFF;
 }
+
 
 .btn-group-options .btn {
   min-height: 4.8rem;

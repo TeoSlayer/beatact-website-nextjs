@@ -69,7 +69,7 @@ export default function Home() {
                             <p class="lead text-muted lh-180">
                             Do you have a great idea for an event? Are you already an established organiser? Are you looking for a more immersive ticketing experience? Become a Beatact Organiser today !
                             </p>
-                            <a href="Features" class="btn btn-dark btn-icon rounded-pill hover-scale-110 mt-5" target="_blank">
+                            <a href="/overview" class="btn btn-dark btn-icon rounded-pill hover-scale-110 mt-5" target="_blank">
                             <span class="btn-inner--text">Join us today</span>
                             <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
                             </a>
