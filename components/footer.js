@@ -9,7 +9,7 @@ export  function Footer(){
                     <div class="row pt-md">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <Link href="/">
-                                <img src="../static/assets/template/assets/img/brand/white.png" alt="Footer logo" style={{height: '70px'}} />
+                                <img src="../img/brand/white.png" alt="Footer logo" style={{height: '70px'}} />
                         </Link>
                     </div>
                     <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">

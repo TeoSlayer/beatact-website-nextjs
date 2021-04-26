@@ -9,7 +9,7 @@ export  function Header(){
           <header class="header header-transparent" id="header-main">
               <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark" id="navbar-main">
                 <div class="container px-lg-0">
-                    <img alt="Image placeholder" src="../static/assets/template/assets/img/brand/white.png" id="navbar-logo" style={{height: '50px'}} href="/" />
+                    <img alt="Image placeholder" src="../img/brand/white.png" id="navbar-logo" style={{height: '50px'}} href="/" />
                     <button className="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                     </button>
