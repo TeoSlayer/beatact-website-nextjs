@@ -48,13 +48,13 @@ export  function Footer(){
                         <h6 class="heading mb-3">Company</h6>
                         <ul class="list-unstyled">
                         <li>
-                            <Link href="/legal/Terms">
+                            <Link href="/legal/terms">
                                  <a>Terms and Conditions</a>
                             </Link>
                             
                         </li>
                         <li>
-                            <Link href="/legal/PrivacyPolicy">
+                            <Link href="/legal/privacypolicy">
                                  <a>Privacy Policy</a>
                             </Link>
                         </li>
@@ -70,12 +70,12 @@ export  function Footer(){
                     <div class="col-md-6">
                         <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://instagram.com/beatactofficial?igshid=17578b4gb52is" target="_blank">
+                            <a class="nav-link" href="https://instagram.com/beatactofficial?igshid=17578b4gb52is" rel="noreferrer" target="_blank">
                             <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://m.facebook.com/beatactofficial/" target="_blank">
+                            <a class="nav-link" href="https://m.facebook.com/beatactofficial/" rel="noreferrer" target="_blank">
                             <i class="fab fa-facebook"></i>
                             </a>
                         </li>

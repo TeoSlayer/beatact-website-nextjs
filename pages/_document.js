@@ -8,7 +8,6 @@ export default class MyDocument extends Document {
                 <Head>
                     <link rel="icon" href="../img/brand/favicon.png" type="image/png"></link>
                     <link rel="stylesheet" href="../libs/@fortawesome/fontawesome-free/css/all.min.css"/>
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap"/>
                     <link rel="stylesheet" href="../libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css"/>
                     <link rel="stylesheet" href="../libs/swiper/dist/css/swiper.min.css"/>
                     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
