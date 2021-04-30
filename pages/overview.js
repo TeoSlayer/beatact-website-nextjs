@@ -231,7 +231,7 @@ export default function Home() {
                         <div className="row">
                         <div className="col-xl-5 col-lg-6 align-self-center">
                             <div className="text-center text-lg-left pb-5">
-                            <h2 className="h1 text-white mb-4"><span className="text-info typed" id="type-example-1" data-type-this="Sell, Buy"> Buy</span> tickets is minutes.</h2>
+                            <h2 className="h1 text-white mb-4"><span className="text-info typed" id="type-example-1" data-type-this="Sell, Buy"></span> tickets in minutes.</h2>
                             <p className="lead lh-180 text-white">It only takes 1 minute to buy a ticket on Beatact and only 5 minutes to create an event!</p>
                             <h6 style={{color: 'white'}}>*Tested on an iPhone 7*</h6>
                             </div>
