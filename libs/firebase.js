@@ -5,14 +5,7 @@ import 'firebase/storage';
 import { convertTimestamps, convertTimestampsPipe, convertTimestamp } from '../node_modules/convert-firebase-timestamp';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyChzi1WIhlVAxi1HgZb0lO6Bac8UL05dkg",
-    authDomain: "beatact-287421.firebaseapp.com",
-    databaseURL: "https://beatact-287421.firebaseio.com",
-    projectId: "beatact-287421",
-    storageBucket: "beatact-287421.appspot.com",
-    messagingSenderId: "262788818904",
-    appId: "1:262788818904:web:a907c3adc885bcfffa74ad",
-    measurementId: "G-XLSE0X89HS"
+
 };
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig)
